@@ -1,0 +1,7 @@
+{
+  "name": "stu_edisapp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
