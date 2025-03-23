@@ -1,0 +1,61 @@
+.container {
+    max-width: 400px;
+    margin: auto;
+    padding-top: 50px; /* Logo ko neeche lane ke liye */
+  }
+  
+  .logo {
+    width: 120px;
+    margin-bottom: 15px;
+    margin-top: 20px; /* Logo ke liye extra margin */
+  }
+  
+  .app-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .card {
+    border-radius: 10px;
+  }
+  
+  .btn {
+    border-radius: 8px;
+  }
+  
+  /* Footer Styling */
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #f8f9fa; /* Light background */
+    padding: 10px 0;
+  }
+  
+  .powered-by {
+    font-size: 14px;
+    color: gray;
+  }
+  
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    width: 24px; /* Default se bada */
+    height: 24px; /* Default se bada */
+    cursor: pointer;
+    filter: invert(32%) sepia(92%) saturate(750%) hue-rotate(200deg);
+  }
+  
+  
+  .cont-button {
+      font-size: 20px !important;
+      height: 43px !important;
+      background-color: var(--primary-color) !important;  
+      border: 1px solid var(--primary-color) !important;
+      border-radius: 8px !important;
+      color: white !important;
+    }
+  
+    .small-logo {
+      width: 100px;
+    }

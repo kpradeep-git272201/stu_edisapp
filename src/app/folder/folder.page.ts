@@ -1,6 +1,6 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { IonHeader, IonToolbar, IonButtons, IonMenuButton, IonTitle, IonContent } from '@ionic/angular/standalone';
+import { IonHeader, IonToolbar, IonButtons, IonMenuButton, IonTitle, IonContent, IonRouterOutlet } from '@ionic/angular/standalone';
 
 @Component({
   selector: 'app-folder',
