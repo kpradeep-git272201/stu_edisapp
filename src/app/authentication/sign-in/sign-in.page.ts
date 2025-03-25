@@ -42,9 +42,8 @@ export class SignInPage implements OnInit {
       );
   
       console.log("Matched Student:", matchedStudent);
-  
       if (matchedStudent) {
-        this.router.navigate(['/create-pin'], {
+        this.router.navigate(['/auth/create-pin'], {
           queryParams: {
             name: matchedStudent.name,
             admissionNumber: matchedStudent.admissionNumber,
@@ -55,7 +54,8 @@ export class SignInPage implements OnInit {
         alert('Invalid credentials. Please try again.');
       }
     } else {
-      alert('Please fill all fields!');
+      // alert('Please fill all fields!');
+      this.router.navigate(['/auth/create-pin']);
     }
   }
   

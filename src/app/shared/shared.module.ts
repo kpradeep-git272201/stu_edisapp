@@ -44,6 +44,7 @@ import {
   IonMenuButton,
   IonApp, IonSplitPane, IonListHeader, IonNote, IonMenuToggle, IonRouterOutlet, IonRouterLink
 } from '@ionic/angular/standalone';
+import { SideMenuComponent } from '../components/side-menu.component';
 
 @NgModule({
   declarations: [],

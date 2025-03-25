@@ -19,10 +19,10 @@ import { RouterModule, Routes } from '@angular/router';
 // ];
 
 const routes: Routes = [
-  {
-    path: 'apps',
-    loadComponent: () => import('./dashboard/dashboard.page').then(m => m.DashboardPage)
-  },
+  // {
+  //   path: 'apps',
+  //   loadComponent: () => import('./dashboard/dashboard.page').then(m => m.DashboardPage)
+  // },
   {
     path: 'dashboard',
     children: [

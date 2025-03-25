@@ -41,9 +41,9 @@ export class LoginPage implements OnInit {
       );
   
       console.log("Matched Student:", matchedStudent);
-  
+
       if (matchedStudent) {
-        this.router.navigate(['/create-pin'], {
+        this.router.navigate(['/apps'], {
           queryParams: {
             name: matchedStudent.name,
             admissionNumber: matchedStudent.admissionNumber,

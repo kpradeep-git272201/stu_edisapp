@@ -35,7 +35,7 @@ export class CreatePinPage implements OnInit {
       if (this.pin.length === 4) {
         setTimeout(() => {
           console.log('Entered PIN:', this.pin);
-          this.router.navigate(['/main/dashboard']); 
+          this.router.navigate(['/apps']) 
         }, 500);
       }
     }
@@ -44,7 +44,7 @@ export class CreatePinPage implements OnInit {
   getLogin() {
     if (this.pin.length === this.pinLength) {
       console.log('PIN Entered:', this.pin);
-      this.router.navigate(['/main/dashboard']);
+      this.router.navigate(['/apps'])
     } else {
       alert('Please enter a full PIN');
     }
