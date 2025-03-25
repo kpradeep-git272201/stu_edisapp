@@ -4,9 +4,137 @@
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title>Dashboard</ion-title>
+    <!-- <ion-buttons slot="end">
+      <ion-icon name="document-text-outline"></ion-icon>
+    </ion-buttons> -->
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <h2>Welcome to Dashboard</h2>
+<ion-content [fullscreen]="true" class="dashboard-content">
+  <div class="profile-card">
+    <ion-avatar class="profile-avatar">
+      <img src="assets/studentImage/avatar.jpg" alt="Student Image" />
+    </ion-avatar>
+    <h2 class="student-name">DEMO STUDENT</h2>
+    <p class="student-class">IV CAMELLIA</p>
+
+    <div class="progress-container">
+      <div class="progress-bar">
+        <span>Attendance</span> <strong>90%</strong>
+        <div class="progress">
+          <div class="progress-fill attendance" style="width: 90%"></div>
+        </div>
+      </div>
+      <div class="progress-bar">
+        <span>Fee</span> <strong>51%</strong>
+        <div class="progress">
+          <div class="progress-fill fee" style="width: 51%"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- School Updates -->
+  <div class="section">
+    <ion-list-header>School Updates</ion-list-header>
+    <div class="icon-grid">
+      <ion-row class="centered-icons">
+        <ion-col size="4">
+          <img src="assets/images/dashboard/new.jpg" />
+          <p>News</p>
+        </ion-col>
+        <ion-col size="4">
+          <img src="assets/images/dashboard/event.jpg" />
+          <p>Events</p>
+        </ion-col>
+        <ion-col size="4">
+          <img src="assets/images/dashboard/bulletin.jpg" />
+          <p>Bulletin</p>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+
+  <!-- Academics -->
+  <div class="section">
+    <ion-list-header>Academics</ion-list-header>
+    <div class="icon-grid">
+      <ion-row class="centered-icons">
+        <ion-col size="4">
+          <img src="assets/images/dashboard/assignment.jpg" />
+          <p>Assignment</p>
+        </ion-col>
+        <ion-col size="4">
+          <img src="assets/images/dashboard/homework.jpg" />
+          <p>Homework</p>
+        </ion-col>
+        <ion-col size="4">
+          <img src="assets/images/dashboard/reportcard.jpg" />
+          <p>Report Card</p>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+
+  <!-- My Updates -->
+  <div class="section">
+    <ion-list-header>My Updates</ion-list-header>
+    <div class="icon-grid">
+      <ion-row class="centered-icons">
+        <ion-col size="6">
+          <img src="assets/images/dashboard/fee.jpg" />
+          <p>Fee</p>
+        </ion-col>
+        <ion-col size="6">
+          <img src="assets/images/dashboard/attendance.jpg" />
+          <p>Attendance</p>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+
+  <!-- Communication -->
+  <div class="section">
+    <ion-list-header>Communication</ion-list-header>
+    <div class="icon-grid">
+      <ion-row class="centered-icons">
+        <ion-col size="4">
+          <img src="assets/images/dashboard/message.jpg" />
+          <p>Messages</p>
+        </ion-col>
+        <ion-col size="4">
+          <img src="assets/images/dashboard/mail.jpg" />
+          <p>Email</p>
+        </ion-col>
+        <ion-col size="4">
+          <img src="assets/images/dashboard/openmessage.jpg" />
+          <p>Mail</p>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
 </ion-content>
+
+<!-- Footer -->
+<ion-footer>
+  <ion-toolbar>
+    <ion-tab-bar>
+      <ion-tab-button tab="home">
+        <ion-icon name="home-outline"></ion-icon>
+        <ion-label>Home</ion-label>
+      </ion-tab-button>
+      <ion-tab-button tab="assignment">
+        <ion-icon name="document-outline"></ion-icon>
+        <ion-label>Assignment</ion-label>
+      </ion-tab-button>
+      <ion-tab-button tab="homework">
+        <ion-icon name="book-outline"></ion-icon>
+        <ion-label>Homework</ion-label>
+      </ion-tab-button>
+      <ion-tab-button tab="fee">
+        <ion-icon name="card-outline"></ion-icon>
+        <ion-label>Pay Fee</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-toolbar>
+</ion-footer>

@@ -121,3 +121,33 @@ ion-item.selected {
 .small-logo {
   width: 100px;
 }
+
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.large-avatar {
+  width: 100px; /* बड़ा आकार */
+  height: 100px;
+}
+
+.center-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px 0;
+  margin: 0 auto;
+  box-shadow: none !important;
+}
+
+.bgColor{
+  background-image: linear-gradient(#27548A, #183B4E); // #4F1C51
+  color: white;
+}

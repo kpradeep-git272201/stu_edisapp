@@ -50,7 +50,7 @@ import { SideMenuComponent } from '../components/side-menu.component';
   declarations: [],
   imports: [
     CommonModule,
-    IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule,
+    IonContent, IonHeader, IonTitle, CommonModule, FormsModule,
     IonContent,
     IonHeader,
     IonTitle,
@@ -96,7 +96,7 @@ import { SideMenuComponent } from '../components/side-menu.component';
     IonMenuButton,
     IonApp, IonSplitPane, IonListHeader, IonNote, IonMenuToggle, IonRouterOutlet, IonRouterLink
   ],
-  exports:[IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule,
+  exports:[IonContent, IonHeader, IonTitle, CommonModule, FormsModule,
     IonContent,
     IonHeader,
     IonTitle,

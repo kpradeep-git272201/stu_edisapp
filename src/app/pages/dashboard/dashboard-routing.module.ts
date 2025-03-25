@@ -28,6 +28,10 @@ const routes: Routes = [
     path: 'about',
     loadComponent: () => import('./about/about.page').then(m => m.AboutPage)
   },
+  {
+    path: 'home',
+    loadComponent: () => import('./home/home.page').then(m => m.HomePage)
+  },
 ];
 
 @NgModule({
