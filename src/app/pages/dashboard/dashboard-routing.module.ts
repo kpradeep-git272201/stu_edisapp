@@ -32,6 +32,14 @@ const routes: Routes = [
     path: 'home',
     loadComponent: () => import('./home/home.page').then(m => m.HomePage)
   },
+  {
+    path: 'attendance',
+    loadComponent: () => import('./attendance/attendance.page').then( m => m.AttendancePage)
+  },
+  {
+    path: 'homework',
+    loadComponent: () => import('./homework/homework.page').then( m => m.HomeworkPage)
+  },
 ];
 
 @NgModule({

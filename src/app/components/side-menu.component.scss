@@ -148,6 +148,6 @@ ion-item.selected {
 }
 
 .bgColor{
-  background-image: linear-gradient(#27548A, #183B4E); // #4F1C51
+  background-image: linear-gradient(to right,  var(--ion-color-primary), var(--ion-color-secondary)) !important; // #4F1C51
   color: white;
 }

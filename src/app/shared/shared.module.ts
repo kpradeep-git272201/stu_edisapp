@@ -42,9 +42,9 @@ import {
   IonTextarea,
   IonMenu,
   IonMenuButton,
+  IonCardSubtitle,
   IonApp, IonSplitPane, IonListHeader, IonNote, IonMenuToggle, IonRouterOutlet, IonRouterLink
 } from '@ionic/angular/standalone';
-import { SideMenuComponent } from '../components/side-menu.component';
 
 @NgModule({
   declarations: [],
@@ -94,6 +94,7 @@ import { SideMenuComponent } from '../components/side-menu.component';
     IonButton,
     IonButtons,
     IonMenuButton,
+    IonCardSubtitle,
     IonApp, IonSplitPane, IonListHeader, IonNote, IonMenuToggle, IonRouterOutlet, IonRouterLink
   ],
   exports:[IonContent, IonHeader, IonTitle, CommonModule, FormsModule,
@@ -140,6 +141,7 @@ import { SideMenuComponent } from '../components/side-menu.component';
     IonTextarea,
     IonMenu,
     IonMenuButton,
+    IonCardSubtitle,
     IonApp, IonSplitPane, IonListHeader, IonNote, IonMenuToggle, IonRouterOutlet, IonRouterLink
   ]
 })

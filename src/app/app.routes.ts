@@ -17,7 +17,11 @@ export const routes: Routes = [
   {
     path: 'apps',
     loadChildren: () => import('./pages/dashboard/dashboard.module').then(m => m.DashboardModule)
-  }
+  },
+
+
+
+
   // {
   //   path: '',
   //   redirectTo: 'sign-in', 

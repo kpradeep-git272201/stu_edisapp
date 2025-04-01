@@ -1,9 +1,9 @@
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
+      <ion-menu-button style="color: white; font-size: 1.875rem;"></ion-menu-button>
     </ion-buttons>
-    <ion-title>Dashboard</ion-title>
+    <ion-title style="color: white;">Dashboard</ion-title>
     <!-- <ion-buttons slot="end">
       <ion-icon name="document-text-outline"></ion-icon>
     </ion-buttons> -->
@@ -35,46 +35,50 @@
   </div>
 
   <!-- School Updates -->
-  <div class="section">
-    <ion-list-header>School Updates</ion-list-header>
-    <div class="icon-grid">
-      <ion-row class="centered-icons">
-        <ion-col size="4">
-          <img src="assets/images/dashboard/new.jpg" />
-          <p>News</p>
-        </ion-col>
-        <ion-col size="4">
-          <img src="assets/images/dashboard/event.jpg" />
-          <p>Events</p>
-        </ion-col>
-        <ion-col size="4">
-          <img src="assets/images/dashboard/bulletin.jpg" />
-          <p>Bulletin</p>
-        </ion-col>
-      </ion-row>
+  <ion-card>
+    <div class="section">
+      <ion-list-header>School Updates</ion-list-header>
+      <div class="icon-grid">
+        <ion-row class="centered-icons">
+          <ion-col size="4">
+            <img src="assets/images/dashboard/new.jpg" />
+            <p>News</p>
+          </ion-col>
+          <ion-col size="4">
+            <img src="assets/images/dashboard/event.jpg" />
+            <p>Events</p>
+          </ion-col>
+          <ion-col size="4">
+            <img src="assets/images/dashboard/bulletin.jpg" />
+            <p>Bulletin</p>
+          </ion-col>
+        </ion-row>
+      </div>
     </div>
-  </div>
+  </ion-card>
 
   <!-- Academics -->
-  <div class="section">
-    <ion-list-header>Academics</ion-list-header>
-    <div class="icon-grid">
-      <ion-row class="centered-icons">
-        <ion-col size="4">
-          <img src="assets/images/dashboard/assignment.jpg" />
-          <p>Assignment</p>
-        </ion-col>
-        <ion-col size="4">
-          <img src="assets/images/dashboard/homework.jpg" />
-          <p>Homework</p>
-        </ion-col>
-        <ion-col size="4">
-          <img src="assets/images/dashboard/reportcard.jpg" />
-          <p>Report Card</p>
-        </ion-col>
-      </ion-row>
+  <ion-card>
+    <div class="section">
+      <ion-list-header>Academics</ion-list-header>
+      <div class="icon-grid">
+        <ion-row class="centered-icons">
+          <ion-col size="4">
+            <img src="assets/images/dashboard/assignment.jpg" />
+            <p>Assignment</p>
+          </ion-col>
+          <ion-col size="4"  (click)="goToHomework()">
+            <img src="assets/images/dashboard/homework.jpg" />
+            <p>Homework</p>
+          </ion-col>
+          <ion-col size="4">
+            <img src="assets/images/dashboard/reportcard.jpg" />
+            <p>Report Card</p>
+          </ion-col>
+        </ion-row>
+      </div>
     </div>
-  </div>
+  </ion-card>
 
   <!-- My Updates -->
   <div class="section">
@@ -85,7 +89,7 @@
           <img src="assets/images/dashboard/fee.jpg" />
           <p>Fee</p>
         </ion-col>
-        <ion-col size="6">
+        <ion-col size="6" (click)="goToAttendance()">
           <img src="assets/images/dashboard/attendance.jpg" />
           <p>Attendance</p>
         </ion-col>
