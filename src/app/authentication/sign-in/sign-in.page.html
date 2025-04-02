@@ -1,0 +1,39 @@
+<ion-content class="ion-padding">
+  <div class="container">
+   <div class="text-center">
+    <img src="assets/images/app_logo/app_logo.jpeg" alt="Student School Logo" class="logo" />
+   </div>
+
+    <h2 class="app-title text-center">
+      <span class="text-primary">PARENT</span> APP
+    </h2>
+
+    <form [formGroup]="loginForm" (ngSubmit)="signIn()" class="card shadow-sm p-4">
+      <h3 class="login-title  text-center">Please Login to Edisapp</h3>
+
+      <div class="mb-3">
+        <label class="form-label">Name</label>
+        <input type="text" class="form-control" formControlName="name">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Admission/Registration Number</label>
+        <input type="text" class="form-control" formControlName="admissionNumber">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Date of Birth</label>
+        <input type="date" class="form-control" formControlName="dob">
+      </div>
+
+      <button class="btn w-100 cont-button" type="submit">Continue</button> 
+      <!-- [disabled]="loginForm.valid" -->
+    </form>
+  </div>
+</ion-content>
+
+<!-- Footer (fixed at bottom) -->
+<div class="footer-logo text-center">
+  <img src="assets/images/app_logo/app_logo.jpeg" alt="Edisapp Logo" class="small-logo" />
+  <p>Powered by <strong>School Frontend</strong></p>
+</div>
